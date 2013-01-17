@@ -63,6 +63,19 @@ module.exports = function(grunt) {
               "src/blanketRequire.js",
               "src/adapters/jasmine-blanket.js"],
         dest: 'dist/jasmine/blanket_jasmine.js'
+      },
+      buster: {
+        src: ['<banner>',
+              'src/lib/esprima.js',
+              'src/lib/falafel.js',
+              'src/blanket.js',
+              'src/blanket_browser.js',
+              'src/lib/require.js',
+              "src/qunit/reporter.js",
+              "src/config.js",
+              "src/blanketRequire.js",
+              "src/adapters/buster-blanket.js"],
+        dest: 'dist/buster/blanket_buster.js'
       }
     },
     min: {
